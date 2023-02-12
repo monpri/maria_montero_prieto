@@ -1,5 +1,5 @@
 function validarNombre(nombre) {
-    var patron = /^[a-zA-Zwñáéíóú]+$/;
+    var patron = /^[a-zA-ZñáéíóúÑÁÉÍÓÚ]+$/;
 
     return patron.test(nombre);
 }
