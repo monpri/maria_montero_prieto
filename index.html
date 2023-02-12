@@ -1,0 +1,38 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Create account</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="formulario">
+    <h1>Create account</h1>
+    <form action="">
+        <div class="campos">
+            <label for="nombre">Nombre</label><br>
+            <input type="text" id="nombre" name="nombre">
+            <span id="error_nombre" class="mensajeError"></span>
+        </div>
+        <div class="campos">
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email">
+            <span id="error_email" class="mensajeError"></span>
+        </div>
+        <div class="campos">
+            <label for="clave">Clave</label><br>
+            <input type="password" id="clave" name="clave">
+            <span id="error_clave" class="mensajeError"></span>
+        </div>
+        <div class="campos">
+            <label for="confirma_clave">Confirme su clave</label><br>
+            <input type="password" id="confirma_clave" name="confirma_clave">
+            <span id="error_confirma_clave" class="mensajeError"></span>
+        </div>
+
+        <input id="enviar" type="button" value="ENVIAR" onclick="validarFormulario()">
+    </form>
+</div>
+</body>
+</html>
